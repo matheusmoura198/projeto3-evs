@@ -47,7 +47,22 @@ if( Credenciamentoliberado && Pagamentoaprovado ){
     console.log("Participação não confirmada")
 }
 
-const resumo = ""
+const resumo = `
+    nome: ${nome}
+    idade: ${idade}
+    categoria: ${categoria}
+    possuiInscricao: ${possuiInscricao}
+    suspenso: ${suspenso}
+    valorInscricao: ${valorInscricao}
+    valorPago: ${valorPago}
+    idadeStatus: ${idadeStatus}
+    nivelAcesso: ${nivelAcesso}
+    acessoStatus: ${acessoStatus}
+    pagamentoStatus: ${pagamentoStatus}
+    troco: ${troco}
+    statusCompeticao: ${statusCompeticao}
+`
+console.log(resumo)
 
 module.exports = {
     nome,
